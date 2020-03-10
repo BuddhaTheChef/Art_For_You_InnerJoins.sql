@@ -4,3 +4,10 @@ SELECT Users.artID, Art.VideoName, Art.Videos FROM Users INNER JOIN Art ON Users
 
 SELECT Users.artID, Users.FirstName, Users.LastName, Art.PhotoName, Art.Photos, Tutorials.WrittenTutorials 
 FROM ((Users INNER JOIN Art ON Users.artID = Art.artID) INNER JOIN Tutorials ON Users.tutorialsID = Tutorials.tutorialsID);
+
+
+
+
+
+SELECT ReplacementPhrases.ReplacementPhrasesID, BadPhrases.BadPhrasesID, BadPhrases.BadPhrases 
+FROM ReplacementPhrases INNER JOIN BadPhrases ON ReplacementPhrases.BadPhrasesID = BadPhrases.BadPhrasesID
