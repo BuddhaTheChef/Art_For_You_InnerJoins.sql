@@ -1,0 +1,1 @@
+# Art_For_You_InnerJoins.sql
